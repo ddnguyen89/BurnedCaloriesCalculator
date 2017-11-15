@@ -163,8 +163,10 @@ public class BurnedCaloriesCalculatorActivity extends AppCompatActivity
             feet = 7;
         }
 
-        inches = 1;
-        if(inchesSplit == 1) {
+        inches = 0;
+        if(inchesSplit == 0) {
+            inches = 0;
+        } else if(inchesSplit == 1) {
             inches = 1;
         } else if(inchesSplit == 2) {
             inches = 2;
@@ -221,7 +223,7 @@ public class BurnedCaloriesCalculatorActivity extends AppCompatActivity
         milesRanProgress = savedValues.getInt("milesRanProgress", 1);
         caloriesBurned = savedValues.getFloat("caloriesBurned", 0);
         feetSplit = savedValues.getInt("feetSplit", 1);
-        inchesSplit = savedValues.getInt("inchesSplit", 1);
+        inchesSplit = savedValues.getInt("inchesSplit", 0);
         bmi = savedValues.getFloat("bmi", 0);
 
         mWeightET.setText(weightString);

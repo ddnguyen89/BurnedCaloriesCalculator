@@ -29,8 +29,11 @@
             android:inputType="number"
             android:textSize="20sp"
             android:hint="000"
+            android:gravity="center"
             android:layout_weight="1"
-            android:textColor="@color/purple" />
+            android:textColor="@color/purple"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/border"/>
     </LinearLayout>
 
     <LinearLayout

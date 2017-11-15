@@ -8,5 +8,5 @@
     <color name="blue">#b4edea</color>
     <color name="green">#5c8e58</color>
     <color name="purple">#522b63</color>
-
+    <color name="border">#fc5555</color>
 </resources>
