@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="nguyen.burnedcaloriescalculator.BurnedCaloriesCalculatorActivity">
+
+    <LinearLayout
+        style="@style/linearLayoutVertical">
+
+        <TextView
+            android:id="@+id/weightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weight_label"
+            style="@style/TextView" />
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:id="@+id/weightET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:hint="000"
+            android:layout_weight="1"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearLayoutVertical">
+
+        <TextView
+            android:id="@+id/milesRanLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/miles_ran_label"
+            style="@style/TextView" />
+
+        <TextView
+            android:id="@+id/milesRanTV"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="@string/miles_ran_tv"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <SeekBar
+            android:id="@+id/milesRanSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:max="20"
+            android:progress="1"
+            android:layout_gravity="center_vertical"
+            android:secondaryProgressTint="@color/purple"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearLayoutVertical">
+
+        <TextView
+            android:id="@+id/caloriesBurnedLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calories_burned_label"
+            style="@style/TextView"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/caloriesBurnedTV"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calories_burned_tv"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearLayoutVertical">
+
+        <TextView
+            android:id="@+id/heightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height_label"
+            style="@style/TextView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/feetSpinner"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/purple" />
+
+        <Spinner
+            android:id="@+id/inchesSpinner"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearLayoutVertical">
+
+        <TextView
+            android:id="@+id/bmiLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bmi_label"
+            style="@style/TextView"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/bmiTV"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/bmi_tv"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        style="@style/linearLayoutVertical"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_et"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/purple" />
+    </LinearLayout>
+</LinearLayout>
